@@ -1,4 +1,4 @@
-# ELMo form ConLL
+# ELMo from ConLL
 Scripts to collect ELMo layer outputs for sentences from a CoNLL treebank.
 
 ## Setup
