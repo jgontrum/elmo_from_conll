@@ -4,14 +4,14 @@ CONLLFILE=$1
 HDF5OUTPUT=$2
 
 # Specify the path to the model here (or leave blank for default)
-ELMO_WEIGHTS=
-ELMO_OPTIONS=
+ELMO_WEIGHTS=$3
+ELMO_OPTIONS=$4
 
 # Define arguments for the ELMo tool.
 ARGS="--all"
 
-if test "$#" -ne 2; then
-    echo "Usage: <CONLL FILE> <OUTPUT HDF5 FILE>"
+if test "$#" -ne 4; then
+    echo "Usage: <CONLL FILE> <OUTPUT HDF5 FILE> <ELMO OPTIONS> <ELMO WEIGHTS>"
     exit
 fi
 
